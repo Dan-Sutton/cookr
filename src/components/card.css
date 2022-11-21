@@ -1,0 +1,14 @@
+.card-component {
+  background-color: var(--primary);
+  height: 55vh;
+  width: 20vw;
+  border-radius: 23px;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 23px;
+  margin-top: 2vh;
+}
