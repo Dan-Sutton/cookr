@@ -3,6 +3,7 @@ import cross from "./assets/cross.png";
 import tick from "./assets/tick.png";
 import "./App.css";
 import Card from "./components/card";
+import FlippableCard from "./components/flippable-card";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="main-content">
           <img src={cross} className="cross-logo" alt="cross" />
-          <Card className="card-one" />
+          {/* <Card className="card-one" /> */}
+          <FlippableCard />
           <img src={tick} className="tick-logo" alt="tick" />
         </div>
       </header>
