@@ -37,3 +37,22 @@
   display: flex;
   justify-content: space-around;
 }
+
+.main-content {
+  display: flex;
+  align-items: center;
+}
+
+.cross-logo {
+  object-fit: cover;
+  height: 8vw;
+  width: 8vw;
+  margin-right: 15vw;
+}
+
+.tick-logo {
+  object-fit: cover;
+  height: 8vw;
+  width: 10vw;
+  margin-left: 15vw;
+}
