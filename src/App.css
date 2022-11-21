@@ -1,4 +1,9 @@
 :root {
+  --background: #1d3557;
+  --shadow: #457b9d;
+  --secondary: #a8dadc;
+  --primary: #a8dadc;
+  --highlight: #e63946;
 }
 
 .App {
