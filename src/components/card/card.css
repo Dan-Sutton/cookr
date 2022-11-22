@@ -19,9 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat;
   color: black;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-front {
@@ -51,10 +50,24 @@
   border-radius: 10px;
   margin-top: 2vh;
   border: 5px solid var(--secondary);
-  border-radius: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* FRONT CARD */
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
 
-
-
+.front-card-content-body {
+  background-color: var(--shadow);
+  color: var(--primary);
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  font-size: medium;
+  font-weight: 700;
+  padding: 2px;
+  border-radius: 15px;
+}

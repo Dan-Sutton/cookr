@@ -1,22 +1,27 @@
 import logo from "./assets/cookrlogo.png";
 import cross from "./assets/cross.png";
 import tick from "./assets/tick.png";
+import berries from "./assets/berries.jpeg";
 import "./App.css";
 import FlippableCard from "./components/flippable-card";
 import { useState } from "react";
 
 function App() {
-  const [recipe, setRecipe] = useState();
+  const [recipe, setRecipe] = useState({
+    title: "Welcome to Cookr!",
+    readyInMinutes: "INIT",
+    servings: "INIT",
+    image: berries,
+  });
 
-  async function getRecipe() {
-    console.log(process.env.REACT_APP_API_KEY);
+  const getRecipe = async () => {
     const response = await fetch(
       `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=1`
     );
     const data = await response.json();
-    setRecipe(data);
+    setRecipe(data.recipes[0]);
     console.log(recipe);
-  }
+  };
 
   return (
     <div className="App">
