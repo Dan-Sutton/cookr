@@ -9,7 +9,7 @@
   position: relative;
 
   /* Styling */
-  border-radius: 5px;
+  border-radius: 10px;
   border: 5px solid white;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 
@@ -36,17 +36,30 @@
 
   /* Content Styling */
   font-family: Montserrat;
-  font-weight: 800;
-  font-size: 60px;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+  color: black;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-front {
-  background-color: #73d0ff;
+  background-color: var(--primary);
 }
 
 .card-back {
-  background-color: #ffad66;
+  background-color: var(--secondary);
   transform: rotateY(180deg);
+}
+
+.front-card-component {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 15vw;
+  width: 17.5vw;
+  border-radius: 23px;
+  margin-top: 2vh;
 }

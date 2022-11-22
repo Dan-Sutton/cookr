@@ -2,7 +2,6 @@ import logo from "./assets/cookrlogo.png";
 import cross from "./assets/cross.png";
 import tick from "./assets/tick.png";
 import "./App.css";
-import Card from "./components/card";
 import FlippableCard from "./components/flippable-card";
 
 function App() {
