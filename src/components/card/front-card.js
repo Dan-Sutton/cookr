@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 
-function FrontCard({}) {
+function FrontCard({ recipe }) {
   return (
     <div className="front-card-component">
       {/* todo image to prop */}
