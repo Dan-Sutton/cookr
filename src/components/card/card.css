@@ -82,3 +82,31 @@ h2 {
   border-radius: 15px;
   min-width: 90%;
 }
+
+.back-card-content-body p {
+  color: black;
+}
+
+.recipe-list {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary);
+  font-weight: 550;
+  font-size: medium;
+  padding-top: 5%;
+  background-color: var(--shadow);
+  border-radius: 20px;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  line-height: 130%;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+.recipe-list::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
