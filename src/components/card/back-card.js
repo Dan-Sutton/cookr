@@ -2,7 +2,7 @@ import React from "react";
 
 function BackCard({ recipe }) {
   return (
-    <div className="front-card-component">
+    <div className="back-card-component">
       <h1>Ingredients</h1>
       {recipe.extendedIngredients != null ? (
         <ul className="recipe-list">

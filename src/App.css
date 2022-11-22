@@ -41,21 +41,27 @@
 
 .main-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.cross-logo {
-  object-fit: cover;
-  height: 8vw;
-  width: 10vw;
-  margin-right: 15vw;
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  height: 100px;
+  font-size: 70px;
+  margin: 23%;
 }
 
-.tick-logo {
-  object-fit: cover;
-  height: 8vw;
-  width: 10vw;
-  margin-left: 15vw;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {

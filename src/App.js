@@ -28,16 +28,17 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="main-content">
-          <img
+          <FlippableCard recipe={recipe} />
+        </div>
+        <div className="buttons">
+          <button
             onClick={() => {
               getRecipe();
             }}
-            src={cross}
-            className="cross-logo"
-            alt="cross"
-          />
-          <FlippableCard recipe={recipe} />
-          <img src={tick} className="tick-logo" alt="tick" />
+          >
+            ❌
+          </button>
+          <button>✅</button>
         </div>
       </header>
       <footer className="app-footer">
