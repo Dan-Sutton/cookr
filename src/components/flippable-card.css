@@ -1,5 +1,26 @@
 .flippable-card-container {
-  height: 50vh;
-  width: 20vw;
+  height: 400px;
+  width: 250px;
   perspective: 1000px;
+}
+
+@media only screen and (min-width: 400px) {
+  .flippable-card-container {
+    height: 57vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 473px) {
+  .flippable-card-container {
+    height: 57vh;
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .flippable-card-container {
+    height: 57vh;
+    width: 320px;
+  }
 }
