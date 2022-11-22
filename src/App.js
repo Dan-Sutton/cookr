@@ -36,7 +36,6 @@ function App() {
             className="cross-logo"
             alt="cross"
           />
-          {/* <Card className="card-one" /> */}
           <FlippableCard recipe={recipe} />
           <img src={tick} className="tick-logo" alt="tick" />
         </div>
