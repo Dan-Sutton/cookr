@@ -28,17 +28,26 @@ function App() {
 
   function acceptRecipe() {
     if (recipe.servings === "INIT") {
-      Swal.fire({
-        position: "top-end",
-        icon: "error",
-        title: "No recipe selected yet!",
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top",
         showConfirmButton: false,
         timer: 1500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+
+      Toast.fire({
+        icon: "error",
+        title: "No route selected!",
       });
     } else {
       const Toast = Swal.mixin({
         toast: true,
-        position: "top-end",
+        position: "top",
         showConfirmButton: false,
         timer: 1500,
         timerProgressBar: true,
