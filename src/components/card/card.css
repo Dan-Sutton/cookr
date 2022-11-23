@@ -91,13 +91,14 @@ h2 {
   margin-top: -5%;
   font-family: "Roboto", sans-serif;
   color: var(--primary);
+  height: 100%;
   font-weight: 550;
   font-size: medium;
   padding-top: 5%;
   background-color: var(--shadow);
   border-radius: 20px;
   display: flex;
-  width: 80%;
+  width: 75%;
   flex-direction: column;
   justify-content: flex-start;
   text-align: start;
