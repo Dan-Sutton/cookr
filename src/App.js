@@ -42,7 +42,7 @@ function App() {
 
       Toast.fire({
         icon: "error",
-        title: "No route selected!",
+        title: "No recipe selected!",
       });
     } else {
       const Toast = Swal.mixin({
