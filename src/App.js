@@ -1,10 +1,9 @@
 import logo from "./assets/cookrlogo.png";
-import cross from "./assets/cross.png";
-import tick from "./assets/tick.png";
 import berries from "./assets/berries.jpeg";
 import "./App.css";
 import FlippableCard from "./components/flippable-card";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 function App() {
   const [recipe, setRecipe] = useState({
@@ -23,6 +22,15 @@ function App() {
     console.log(recipe);
   };
 
+  function acceptRecipe() {
+    Swal.fire({
+      position: "top-end",
+      title: "Recipe accepted! ✅",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -38,7 +46,13 @@ function App() {
           >
             ❌
           </button>
-          <button>✅</button>
+          <button
+            onClick={() => {
+              acceptRecipe();
+            }}
+          >
+            ✅
+          </button>
         </div>
       </header>
 
