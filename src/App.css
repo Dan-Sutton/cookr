@@ -8,6 +8,7 @@
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -23,13 +24,12 @@
 
 .App-header {
   background-color: var(--background);
-  height: 90vh;
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   margin: none;
-  padding-bottom: 1000px;
 }
 
 .app-footer {
