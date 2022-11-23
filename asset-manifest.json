@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cookr/static/css/main.3b4c091d.css",
+    "main.css": "/cookr/static/css/main.c8acbc36.css",
     "main.js": "/cookr/static/js/main.16fe4e4b.js",
     "static/js/787.2375a92d.chunk.js": "/cookr/static/js/787.2375a92d.chunk.js",
     "static/media/berries.jpeg": "/cookr/static/media/berries.76018060092e18bf7b6e.jpeg",
@@ -8,12 +8,12 @@
     "static/media/cross.png": "/cookr/static/media/cross.4cd4c3b1a732f38620bc.png",
     "static/media/tick.png": "/cookr/static/media/tick.bc96d8fbab43d1c50808.png",
     "index.html": "/cookr/index.html",
-    "main.3b4c091d.css.map": "/cookr/static/css/main.3b4c091d.css.map",
+    "main.c8acbc36.css.map": "/cookr/static/css/main.c8acbc36.css.map",
     "main.16fe4e4b.js.map": "/cookr/static/js/main.16fe4e4b.js.map",
     "787.2375a92d.chunk.js.map": "/cookr/static/js/787.2375a92d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4c091d.css",
+    "static/css/main.c8acbc36.css",
     "static/js/main.16fe4e4b.js"
   ]
 }
