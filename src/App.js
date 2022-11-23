@@ -13,6 +13,10 @@ function App() {
     image: berries,
   });
 
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   const getRecipe = async () => {
     const response = await fetch(
       `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=1`
@@ -23,12 +27,32 @@ function App() {
   };
 
   function acceptRecipe() {
-    Swal.fire({
-      position: "top-end",
-      title: "Recipe accepted! ✅",
-      showConfirmButton: false,
-      timer: 1500,
-    });
+    if (recipe.servings === "INIT") {
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "No recipe selected yet!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    } else {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+
+      Toast.fire({
+        icon: "success",
+        title: "Accepted recipe!",
+      }).then(() => openInNewTab(`${recipe.sourceUrl}`));
+    }
   }
 
   return (
