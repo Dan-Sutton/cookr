@@ -4,7 +4,7 @@
   perspective: 1000px;
 }
 
-@media only screen and (min-width: 400px) {
+/* @media only screen and (min-width: 400px) {
   .flippable-card-container {
     height: 57vh;
     width: 74vw;
@@ -23,4 +23,4 @@
     height: 57vh;
     width: 320px;
   }
-}
+} */
