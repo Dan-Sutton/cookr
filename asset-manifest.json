@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cookr/static/css/main.f50d344b.css",
+    "main.css": "/cookr/static/css/main.07dc98b0.css",
     "main.js": "/cookr/static/js/main.cb53ba93.js",
     "static/js/787.2375a92d.chunk.js": "/cookr/static/js/787.2375a92d.chunk.js",
     "static/media/berries.jpeg": "/cookr/static/media/berries.76018060092e18bf7b6e.jpeg",
     "static/media/cookrlogo.png": "/cookr/static/media/cookrlogo.520a2417718b28a852b2.png",
     "index.html": "/cookr/index.html",
-    "main.f50d344b.css.map": "/cookr/static/css/main.f50d344b.css.map",
+    "main.07dc98b0.css.map": "/cookr/static/css/main.07dc98b0.css.map",
     "main.cb53ba93.js.map": "/cookr/static/js/main.cb53ba93.js.map",
     "787.2375a92d.chunk.js.map": "/cookr/static/js/787.2375a92d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f50d344b.css",
+    "static/css/main.07dc98b0.css",
     "static/js/main.cb53ba93.js"
   ]
 }
